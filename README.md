@@ -1,118 +1,87 @@
-<!-- README START -->
+<div align="center">
+<h1>Markdown Docs</h1>
+<p>Storybook addon for auto importing markdown docs.</p>
 
-# Storybook Addon Kit
+[![][img.release]][link.release]
+[![][img.license]][link.license]
 
-Simplify the creation of Storybook addons
+[![][img.npm]][link.npm]
+[![][img.storybook]][link.npm]
 
-- 📝 Live-editing in development
-- ⚛️ React/JSX support
-- 📦 Transpiling and bundling with Babel
-- 🏷 Plugin metadata
-- 🚢 Release management with [Auto](https://github.com/intuit/auto)
-- 🧺 Boilerplate and sample code
-- 🛄 ESM support
-- 🛂 TypeScript by default with option to eject to JS
+[![][img.banner]][link.npm]
+</div>
 
-## Getting Started
+<h2>Table of Contents</h2>
 
-Click the **Use this template** button to get started.
+- [Getting started](#getting-started)
 
-![](https://user-images.githubusercontent.com/321738/125058439-8d9ef880-e0aa-11eb-9211-e6d7be812959.gif)
+## Getting started
 
-Clone your repository and install dependencies.
+1. Install the addon:
 
-```sh
-yarn
+```js
+yarn add @sheriffmoose/storybook-md -D
 ```
 
-<!-- README END -->
+2. Add the addon into your main.js
 
-### Development scripts
-
-- `yarn start` runs babel in watch mode and starts Storybook
-- `yarn build` build and package your addon code
-
-### Switch from TypeScript to JavaScript
-
-Don't want to use TypeScript? We offer a handy eject command: `yarn eject-ts`
-
-This will convert all code to JS. It is a destructive process, so we recommended running this before you start writing any code.
-
-## What's included?
-
-![Demo](https://user-images.githubusercontent.com/42671/107857205-e7044380-6dfa-11eb-8718-ad02e3ba1a3f.gif)
-
-The addon code lives in `src`. It demonstrates all core addon related concepts. The three [UI paradigms](https://storybook.js.org/docs/react/addons/addon-types#ui-based-addons)
-
-- `src/Tool.js`
-- `src/Panel.js`
-- `src/Tab.js`
-
-Which, along with the addon itself, are registered in `src/preset/manager.js`.
-
-Managing State and interacting with a story:
-
-- `src/withGlobals.js` & `src/Tool.js` demonstrates how to use `useGlobals` to manage global state and modify the contents of a Story.
-- `src/withRoundTrip.js` & `src/Panel.js` demonstrates two-way communication using channels.
-- `src/Tab.js` demonstrates how to use `useParameter` to access the current story's parameters.
-
-Your addon might use one or more of these patterns. Feel free to delete unused code. Update `src/preset/manager.js` and `src/preset/preview.js` accordingly.
-
-Lastly, configure you addon name in `src/constants.js`.
-
-### Metadata
-
-Storybook addons are listed in the [catalog](https://storybook.js.org/addons) and distributed via npm. The catalog is populated by querying npm's registry for Storybook-specific metadata in `package.json`. This project has been configured with sample data. Learn more about available options in the [Addon metadata docs](https://storybook.js.org/docs/react/addons/addon-catalog#addon-metadata).
-
-## Release Management
-
-### Setup
-
-This project is configured to use [auto](https://github.com/intuit/auto) for release management. It generates a changelog and pushes it to both GitHub and npm. Therefore, you need to configure access to both:
-
-- [`NPM_TOKEN`](https://docs.npmjs.com/creating-and-viewing-access-tokens#creating-access-tokens) Create a token with both _Read and Publish_ permissions.
-- [`GH_TOKEN`](https://github.com/settings/tokens) Create a token with the `repo` scope.
-
-Then open your `package.json` and edit the following fields:
-
-- `name`
-- `author`
-- `repository`
-
-#### Local
-
-To use `auto` locally create a `.env` file at the root of your project and add your tokens to it:
-
-```bash
-GH_TOKEN=<value you just got from GitHub>
-NPM_TOKEN=<value you just got from npm>
+```js
+module.exports = {
+    ...
+    "addons": [
+        "@sheriffmoose/storybook-md",
+        ...
+    ],
+    ...
+}
 ```
 
-Lastly, **create labels on GitHub**. You’ll use these labels in the future when making changes to the package.
+3. Update stories imports in main.js
 
-```bash
-npx auto create-labels
+```js
+module.exports = {
+    ...
+    "stories": [
+        "../*.md",
+        "../src/**/*.stories.@(js|jsx|ts|tsx)"
+    ],
+    ...
+}
 ```
 
-If you check on GitHub, you’ll now see a set of labels that `auto` would like you to use. Use these to tag future pull requests.
+4. That's it, you're done. Now you will find README & CHANGELOG in your Storybook sidebar and you can open them and see the contents.
 
-#### GitHub Actions
 
-This template comes with GitHub actions already set up to publish your addon anytime someone pushes to your repository.
 
-Go to `Settings > Secrets`, click `New repository secret`, and add your `NPM_TOKEN`.
 
-### Creating a release
 
-To create a release locally you can run the following command, otherwise the GitHub action will make the release for you.
 
-```sh
-yarn release
-```
 
-That will:
 
-- Build and package the addon code
-- Bump the version
-- Push a release to GitHub and npm
-- Push a changelog to GitHub
+
+
+
+
+
+
+
+
+
+
+[img.release]:
+https://img.shields.io/github/actions/workflow/status/sheriffMoose/storybook-md/release.yml?logo=github&label=release
+[img.license]:
+https://img.shields.io/github/license/sheriffMoose/storybook-md?logo=github
+[img.npm]:
+https://img.shields.io/npm/v/@sheriffmoose/storybook-md?logo=npm&logoColor=white&labelColor=CB3837&color=grey&label=
+[img.storybook]:
+https://img.shields.io/npm/dependency-version/@sheriffmoose/storybook-md/dev/storybook?logo=storybook&logoColor=white&labelColor=FF4785&color=grey&label=
+[img.banner]:
+https://nodei.co/npm/@sheriffmoose/storybook-md.png
+
+[link.release]:
+https://github.com/sheriffMoose/storybook-md/actions/workflows/release.yml
+[link.license]:
+https://github.com/sheriffMoose/storybook-md/blob/main/LICENSE
+[link.npm]:
+https://npmjs.org/package/@sheriffmoose/storybook-md
