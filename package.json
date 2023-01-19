@@ -1,6 +1,6 @@
 {
   "name": "@sheriffmoose/storybook-md",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Storybook addon for auto importing markdown docs.",
   "repository": "sheriffMoose/storybook-md",
   "homepage": "https://github.com/sheriffMoose/storybook-md#readme",
