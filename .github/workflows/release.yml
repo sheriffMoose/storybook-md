@@ -28,10 +28,6 @@ jobs:
         run: |
           yarn build-storybook
           
-      - name: Publish Chromatic
-        run: |
-          yarn chromatic
-
       - name: Create Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
