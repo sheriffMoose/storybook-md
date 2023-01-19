@@ -1,3 +1,15 @@
+# v1.0.10 (Thu Jan 19 2023)
+
+#### ⚠️ Pushed to `main`
+
+- add support for html files & add titles to be read by Storybook later ([@sheriffMoose](https://github.com/sheriffMoose))
+
+#### Authors: 1
+
+- Mostafa Sherif ([@sheriffMoose](https://github.com/sheriffMoose))
+
+---
+
 <title>Changelog</title>
 
 # v1.0.9 (Thu Jan 19 2023)
