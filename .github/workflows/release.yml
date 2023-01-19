@@ -20,14 +20,6 @@ jobs:
       - name: Install dependencies
         uses: bahmutov/npm-install@v1
 
-      - name: Build Addon
-        run: |
-          yarn build
-          
-      - name: Build Storybook
-        run: |
-          yarn build-storybook
-          
       - name: Create Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
