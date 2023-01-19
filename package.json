@@ -67,7 +67,6 @@
     "chromatic": "^6.14.0",
     "concurrently": "^6.2.0",
     "dedent": "^0.7.0",
-    "ngx-build-plus": "14",
     "prettier": "^2.3.1",
     "prop-types": "^15.7.2",
     "react": "^17.0.1",
