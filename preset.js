@@ -1,12 +1,13 @@
-function config(entry = []) {
-  return [...entry, require.resolve("./dist/esm/preset/preview")];
-}
-
-function managerEntries(entry = []) {
-  return [...entry, require.resolve("./dist/esm/preset/manager")];
-}
+const mdIndexer = require('./indexer');
 
 module.exports = {
-  managerEntries,
-  config,
-};
+  storyIndexers: (indexers) => {
+    return [
+      {
+        test: /\.md$/,
+        indexer: mdIndexer
+      },
+      ...(indexers || [])
+    ];
+  }
+}
