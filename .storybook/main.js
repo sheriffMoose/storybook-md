@@ -1,7 +1,16 @@
 module.exports = {
-  stories: [
-    "../stories/**/*.stories.mdx",
-    "../stories/**/*.stories.@(js|jsx|ts|tsx)",
-  ],
-  addons: ["../preset.js", "@storybook/addon-essentials"],
+  framework: {
+    name: "@storybook/react-webpack5",
+    options: {}
+  },
+  stories: ['../*.md'],
+  addons: ["../preset.js", "@storybook/addon-essentials", {
+    name: "@storybook/addon-docs",
+    options: {
+      transcludeMarkdown: true
+    }
+  }],
+  docs: {
+    autodocs: true
+  }
 };
