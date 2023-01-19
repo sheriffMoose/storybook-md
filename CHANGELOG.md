@@ -1,3 +1,15 @@
+# v1.0.9 (Thu Jan 19 2023)
+
+#### ⚠️ Pushed to `main`
+
+- update README.md ([@sheriffMoose](https://github.com/sheriffMoose))
+
+#### Authors: 1
+
+- Mostafa Sherif ([@sheriffMoose](https://github.com/sheriffMoose))
+
+---
+
 # v1.0.8 (Thu Jan 19 2023)
 
 #### ⚠️ Pushed to `main`
