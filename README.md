@@ -1,9 +1,11 @@
+<title>Introduction</title>
+
 <div align="center">
 
 <img src="https://github.com/sheriffMoose/storybook-md/blob/main/demo.png?raw=true"  />
 
 <h1>Markdown Docs</h1>
-<p>Storybook addon for auto importing markdown docs.</p>
+<p>Storybook addon for auto importing markdown/html docs.</p>
 
 [![][img.release]][link.release]
 [![][img.license]][link.license]
@@ -17,6 +19,7 @@
 <h2>Table of Contents</h2>
 
 - [Getting started](#getting-started)
+- [Read More](#read-more)
 
 ## Getting started
 
@@ -26,19 +29,13 @@
 yarn add @sheriffmoose/storybook-md -D
 ```
 
-2. Add the addon into your main.js & enable `transcludeMarkdown`
+2. Add the addon into your main.js
 
 ```js
 module.exports = {
     ...
     "addons": [
         "@sheriffmoose/storybook-md",
-        {
-            name: "@storybook/addon-docs",
-            options: {
-                transcludeMarkdown: true
-            }
-        },
         ...
     ],
     ...
@@ -51,7 +48,7 @@ module.exports = {
 module.exports = {
     ...
     "stories": [
-        "../*.md",
+        "../*.@(md|html)",
         "../src/**/*.stories.@(js|jsx|ts|tsx)"
     ],
     ...

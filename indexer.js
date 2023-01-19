@@ -2,7 +2,7 @@ import { loadCsf } from '@storybook/csf-tools';
 import { compile } from '@storybook/mdx2-csf';
 
 module.exports = async (fileName, opts) => {
-    const title = fileName.split('/').pop().replace('.md', '');
+    const title = fileName.split('/').pop().replace(/\.(md|html)$/, '');
 
     // Convert Markdown into MDX
     const source = `

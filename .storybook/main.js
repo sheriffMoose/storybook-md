@@ -3,13 +3,8 @@ module.exports = {
     name: "@storybook/react-webpack5",
     options: {}
   },
-  stories: ['../*.md'],
-  addons: ["../preset.js", "@storybook/addon-essentials", {
-    name: "@storybook/addon-docs",
-    options: {
-      transcludeMarkdown: true
-    }
-  }],
+  stories: ['../*.@(md|html)'],
+  addons: ["../preset.js", "@storybook/addon-essentials"],
   docs: {
     autodocs: true
   }

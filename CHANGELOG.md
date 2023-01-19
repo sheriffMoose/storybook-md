@@ -1,3 +1,5 @@
+<title>Changelog</title>
+
 # v1.0.9 (Thu Jan 19 2023)
 
 #### ⚠️ Pushed to `main`
