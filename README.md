@@ -1,7 +1,5 @@
 <div align="center">
 
-<img src="https://github.com/sheriffMoose/storybook-md/blob/main/demo.png?raw=true"  />
-
 <h1>Markdown Docs</h1>
 <p>Storybook addon for auto importing markdown/html docs.</p>
 
@@ -27,20 +25,7 @@
 yarn add @sheriffmoose/storybook-md -D
 ```
 
-2. Add the addon into your main.js
-
-```js
-module.exports = {
-    ...
-    "addons": [
-        "@sheriffmoose/storybook-md",
-        ...
-    ],
-    ...
-}
-```
-
-3. Update stories imports in main.js
+2. Add the addon and update the stories imports in your main.js
 
 ```js
 module.exports = {
@@ -49,12 +34,15 @@ module.exports = {
         "../*.@(md|html)",
         "../src/**/*.stories.@(js|jsx|ts|tsx)"
     ],
+    "addons": [
+        "@sheriffmoose/storybook-md",
+        ...
+    ],
     ...
 }
 ```
 
-4. That's it, you're done. Now you will find README & CHANGELOG along with HTML docs if you want as well, in your Storybook sidebar and you can open them and see the contents.
-
+That's it, you're done. Now you will find README & CHANGELOG along with HTML docs if you want as well, in your Storybook sidebar and you can open them and see the contents.
 
 
 
@@ -68,7 +56,10 @@ I have a series of articles written to explain the motivation and purpose behind
 * [`Storybook Addon for Auto Markdown Import`](https://sheriffmoose.medium.com/storybook-addon-for-auto-markdown-import-74f58b6d9c5c)
 * [`Support .html files in Storybook`](https://sheriffmoose.medium.com/support-html-files-in-storybook-9e4da45a829a)
 
+Also make sure to check out these PRs that made this addon possible:
 
+* [`storybookjs/storybook #20679 Update Story Indexer to support DocsOnly pages from Markdown/HTML`](https://github.com/storybookjs/storybook/pull/20679)
+* [`storybookjs/docs-mdx #10 Add support for Markdown/HTML titles`](https://github.com/storybookjs/docs-mdx/pull/10)
 
 
 
