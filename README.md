@@ -42,6 +42,22 @@ module.exports = {
 }
 ```
 
+3. Optionally you may want to pass `mdInclude` and/or `mdExclude` options if needed like so:
+
+```js
+module.exports = {
+    addons: [
+        {
+            name: '@sheriffmoose/storybook-md',
+            options: {
+                mdInclude: path.join(process.cwd(), 'src'),
+                mdExclude: [/\.component\.html/] // Disable loading Angular component files
+            }
+        }
+    ]
+}
+```
+
 That's it, you're done. Now you will find README & CHANGELOG along with HTML docs if you want as well, in your Storybook sidebar and you can open them and see the contents.
 
 
