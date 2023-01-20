@@ -55,7 +55,7 @@ module.exports = {
 }
 ```
 
-4. That's it, you're done. Now you will find README & CHANGELOG in your Storybook sidebar and you can open them and see the contents.
+4. That's it, you're done. Now you will find README & CHANGELOG along with HTML docs if you want as well, in your Storybook sidebar and you can open them and see the contents.
 
 
 
@@ -68,6 +68,7 @@ I have a series of articles written to explain the motivation and purpose behind
 * [`Storybook Markdown Docs (not mdx)`](https://sheriffmoose.medium.com/storybook-markdown-docs-not-mdx-cfa25632ebfc)
 * [`Storybook Markdown Docs (not mdx) Part 2`](https://sheriffmoose.medium.com/storybook-markdown-docs-not-mdx-part-2-757463fcad84)
 * [`Storybook Addon for Auto Markdown Import`](https://sheriffmoose.medium.com/storybook-addon-for-auto-markdown-import-74f58b6d9c5c)
+* [`Support .html files in Storybook`](https://sheriffmoose.medium.com/support-html-files-in-storybook-9e4da45a829a)
 
 
 
