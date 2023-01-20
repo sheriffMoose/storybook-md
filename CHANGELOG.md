@@ -1,3 +1,15 @@
+# v1.0.14 (Fri Jan 20 2023)
+
+#### ⚠️ Pushed to `main`
+
+- add `mdInclude` & `mdExclude` options ([@sheriffMoose](https://github.com/sheriffMoose))
+
+#### Authors: 1
+
+- Mostafa Sherif ([@sheriffMoose](https://github.com/sheriffMoose))
+
+---
+
 # v1.0.13 (Fri Jan 20 2023)
 
 #### ⚠️ Pushed to `main`
