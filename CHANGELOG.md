@@ -1,3 +1,16 @@
+# v1.0.11 (Fri Jan 20 2023)
+
+#### ⚠️ Pushed to `main`
+
+- remove <title> tag from README.md & CHANGELOG.md ([@sheriffMoose](https://github.com/sheriffMoose))
+- update README.md ([@sheriffMoose](https://github.com/sheriffMoose))
+
+#### Authors: 1
+
+- Mostafa Sherif ([@sheriffMoose](https://github.com/sheriffMoose))
+
+---
+
 # v1.0.10 (Thu Jan 19 2023)
 
 #### ⚠️ Pushed to `main`
