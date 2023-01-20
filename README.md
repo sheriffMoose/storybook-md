@@ -1,5 +1,3 @@
-<title>Introduction</title>
-
 <div align="center">
 
 <img src="https://github.com/sheriffMoose/storybook-md/blob/main/demo.png?raw=true"  />
