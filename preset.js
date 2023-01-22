@@ -17,7 +17,7 @@ export async function webpack(config, { mdInclude, mdExclude }) {
   rules = [
     ...rules.filter((rule) => rule.test?.toString() !== '/\\.md$/'),
     {
-      test: /\.(md|html)/,
+      test: /\.(md|html)$/,
       use: [
         {
           loader,
