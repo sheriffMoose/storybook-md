@@ -1,3 +1,15 @@
+# v1.0.16 (Sun Jan 22 2023)
+
+#### ⚠️ Pushed to `main`
+
+- fix test pattern ([@sheriffMoose](https://github.com/sheriffMoose))
+
+#### Authors: 1
+
+- Mostafa Sherif ([@sheriffMoose](https://github.com/sheriffMoose))
+
+---
+
 # v1.0.15 (Sun Jan 22 2023)
 
 #### ⚠️ Pushed to `main`
